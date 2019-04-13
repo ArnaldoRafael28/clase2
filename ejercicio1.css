@@ -1,0 +1,14 @@
+
+h1
+{
+    color: green;
+    background-color: aquamarine;
+}
+h2{
+    color: white;
+    background-color: black;
+}
+/* para las etiquetas*/
+.texto-rojo{
+    color: red;
+}

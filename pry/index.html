@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hola puto mundo!</title>
+  </head>
+  <body>    
+      <!-- container flui es toda la pantalla-->
+      <!-- container es la parte de enmedio de la pantalla-->
+
+    <div class="container"> <!-- etiqueta DIV es la que agrupa -->
+        <h1>Agenda de Contactos </h1> 
+        <hr> <!-- linea divisora-->
+
+        <div class="row"> <!-- filas -->
+            <div class="col"> <!-- columna 1-->
+                <h3>Formulario</h3> <!--subtitulo -->
+                <hr>
+                <!-- input: nombre -->
+                <div class="form-group"> <!--clase agrupada -->
+                         <div class="row"> <!--en una fila dos columnas -->
+                             <div class="col"> <!-- 1° columna-->
+                                    <label for="txtNombre">Nombre</label>
+                                    <input type="text"  class="form-control" id="txtNombre" placeholder="Nombres"> 
+                             </div>
+                             <div class="col"> <!-- 2° columma-->
+                                    <label for="txtApellidos">Apellidos</label>
+                                    <input type="text"  class="form-control" id="txtApellidos" placeholder="Apellidos"> 
+                             </div>
+                         </div>
+
+                </div>
+
+                <!-- input: correo -->
+                <div class="form-group"> <!--clase agrupada -->
+                    <label for="txtCorreo">Correo</label>
+                    <input type="email"  class="form-control" id="txtCorreo" placeholder="ejemplo@hotmail.com"> 
+                </div>
+
+                <!-- input: fecha -->
+                <div class="form-group"> <!--clase agrupada -->
+                    <label for="txtFecha">Fecha Nacimiento:</label>
+                    <input type="date"  class="form-control" id="txtFecha" placeholder="Fecha de Nacimiento"> 
+                </div>
+
+                <!-- select: para pais -->
+                <div class="form-group"> <!--clase agrupada -->
+                    <label for="txtPais">Pa&iacute;s:</label>
+                    <select  id="txtPais"> <!-- para hacer el combo-->
+                        <option value="Peru">Per&uacute;</option> <!-- CON TILDE-->
+                        <option value="Chile">Chile</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+
+                <!-- radio : para sexo-->
+                <div class="from-group"> 
+                    <label for="">Sexo :</label>
+                    <!--para hacer un boton radio -->
+                    <div class="row">
+                        <div class="col"><!-- MACULINO-->
+                                <div class="custom-control custom-radio"> <!-- https://hackerthemes.com/bootstrap-cheatsheet/#custom-radio-->
+                                    <input type="radio" id="rbmaculino" name="rbsexo" class="custom-control-input" value="M"> <!-- con el value pongo el valor-->
+                                    <label class="custom-control-label" for="rbmaculino">Masculino</label>
+                                </div>
+                        </div>
+                        <div class="col"><!-- FEMEMNNO-->
+                                <div class="custom-control custom-radio">
+                                        <input type="radio" id="rbfemenino" name="rbsexo" class="custom-control-input" value="F">
+                                        <label class="custom-control-label" for="rbfemenino">Femenino</label>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+<br>
+<br>
+                <!-- botom : registrar-->
+                <a href="" id="btnRegistrar" class="btn btn-primary ">Registrar</a>
+
+            </div> 
+            <div class="col"> <!-- columna 2 -->
+                <h3>Lista de Contactos</h3>
+                
+                <table class="table">    <!--table>thead>tr>th*5  --> <!-- aqui para crear la clase tabla -->
+                    <thead><!-- la cabeza-->
+                        <tr>  <!--cabecera -->
+                            <th>Nombre</th> <!-- celda -->
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>F. Nacimiento</th>
+                            <th>Pa&iacutes</th>
+                            <th> Sexo</th>
+                            <th> <!-- botones-->
+                                op
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbldatos">
+                        <tr>
+                            <td>Juan</td>
+                            <td>Castro</td>
+                            <td> juan@hotmail.com</td>
+                            <td>1995-02-08</td>
+                            <td>Argentina</td>
+                            <td>M</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm opcion-eliminar">X</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="agenda.js"></script> <!-- aqui la referenciamos --> 
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+/*para le titulo de una clase*/
+.txt-titulo{
+    font-weight: bold;
+    font-size: x-large; /*PARA PONERLO MAS GRANDE LA LETRA*/ 
+    color: red !important; /*el !IMPORTANT es para que siempre permanezca ese color */
+}
+/*para subrayar el texto*/
+.txt-subrayar{
+    text-decoration: underline;
+}
+/*para darle color al texto*/
+.txt-verde{
+    color: green;
+}
+/*definir un estilo por ID*/
+#txtnombre{ /*# solo cuando es ID*/
+    color: violet;
+
+}

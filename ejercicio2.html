@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documento dos</title>
+<!-- para indicar que css voya usar-->
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <!--para darle las propiedades del css2 -->
+    <p class="txt-titulo txt-verde"> Esto es un ejemplo</p> 
+    <p class="txt-verde txt-subrayar"> Esto es un ejemplo</p>
+
+    <!-- ID atributo de identificador unico-->
+    <input type="text" name="" id="txtnombre" placeholder="INTRODUCE SU NOMBRE"> <!--IMPUT para caja de texto-->
+    <br>
+
+    <!--PARA HACER LA SUMA DE DOS NUMEROS-->
+    <input type="text" name="" id="numero1" placeholder="numero 1"> 
+    <br> 
+    <input type="text" name="" id="numero2" placeholder="numero 2"> 
+    <br>
+    <button id="btnSumar" onclick="sumar()">SUMAR </button>
+<script>
+//CREAMOS la funcion sumar
+    function sumar(){
+        
+        var num1= document.getElementById("numero1").value;//variable 1
+        var num2= document.getElementById("numero2").value;//variable 2
+        //primero lo convertimos a numero con PARSEINT
+        var resultado= parseInt(num1)+parseInt(num2); //aqui lo sumamos
+        alert(resultado); //mostrmos el resultado
+    } 
+</script>
+</body>
+</html>
